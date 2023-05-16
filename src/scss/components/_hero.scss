@@ -1,0 +1,114 @@
+.hero {
+  // .hero__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  // .hero__content
+  &__content {
+    padding-top: 55px;
+    flex: 0 0 540px;
+    text-align: left;
+  }
+  // .hero__title
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 68px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #002a48;
+    margin-bottom: rem(24);
+    letter-spacing: -5px;
+  }
+  // .hero__accent
+  &__accent {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+  }
+  // .hero__text
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242b33;
+    margin-bottom: rem(34);
+  }
+  // .hero__btn
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  // .hero__btn--video
+  &__btn--video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 27px 8px;
+    gap: 8px;
+    /* Primary Color/Dark Blue */
+    border: 2px solid #003459;
+    background: inherit;
+
+    border-radius: 57px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #003459;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: $activeColor;
+        background-color: $activeColor;
+        color: #fff;
+      }
+    }
+
+    &:active {
+      border-color: $activeColor;
+      background-color: $activeColor;
+      color: #fff;
+    }
+
+    &.focus-visible {
+        border-color: red;
+        outline: 1px dotted red;
+      }
+  }
+  // .hero__btn--modal
+  &__btn--modal {
+    /* Auto layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 35.5px 10px;
+    /* Primary Color/Dark Blue */
+    background: #003459;
+    border-radius: 57px;
+    min-width: 163px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fdfdfd;
+  }
+  // .hero__image
+  &__image {
+    flex-shrink: 0;
+  }
+  &__img {
+    left: -170px;
+    top: -16px;
+
+    position: relative;
+  }
+}
+.image {
+}

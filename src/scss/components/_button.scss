@@ -1,0 +1,47 @@
+/* --------- btn --------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px 10px;
+  background: #003459;
+  border-radius: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fdfdfd;
+  margin-right: 14px;
+  white-space: nowrap;
+
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: $activeColor;
+      background-color: $activeColor;
+    }
+  }
+
+  &:active {
+    border-color: $activeColor;
+    background-color: $activeColor;
+  }
+}
+
+.btn.focus-visible {
+  border-color: $activeColor;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}

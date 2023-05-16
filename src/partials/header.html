@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="header__container">
+    <a href="#" class="header__logo">
+      <img
+        loading="lazy"
+        src="img/logo.png"
+        class="logo"
+        width="115"
+        height="40"
+        alt="logo creaton"
+      />
+    </a>
+    <div data-prlx-mouse class="header__menu menu">
+      <nav class="menu__body">
+        <ul data-spollers="768,max" class="menu__list">
+          <li data-goto-header data-goto=".page__section-1" class="menu__item">
+            <a href="#" class="menu__link">Home</a>
+          </li>
+          <li data-goto=".page__section-2" class="menu__item">
+            <a href="#" class="menu__link">Category</a>
+          </li>
+          <li data-goto=".page__section-3" class="menu__item">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li data-goto=".page__section-4" class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu__icon icon-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <form action="#" class="header__search search-header">
+      <input
+        class="search-header__input input-reset"
+        autocomplete="off"
+        type="search"
+        name="form[]"
+        placeholder="Search here!"
+      />
+      <button class="search-header__btn input-reset" type="submit"></button>
+    </form>
+    <a href="#" class="btn header__btn">Join the community</a>
+    @include('./select.html')
+  </div>
+</header>

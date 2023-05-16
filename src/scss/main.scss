@@ -1,0 +1,20 @@
+// базовые подключения
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "base";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/button";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/menufls";
+@import "./components/popupfls";
+@import "./components/tabsfls";
+@import "./components/spollersfls";
+
+@import "./components/swiper-main";
+
+
+
