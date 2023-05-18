@@ -1,4 +1,10 @@
 .header {
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
   // .header__container
   &__container {
     display: flex;
@@ -47,8 +53,8 @@
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  @media (max-width: 1155px){
-      display: none;
+  @media (max-width: 1155px) {
+    display: none;
   }
 
   // .search-header__input

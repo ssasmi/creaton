@@ -8,46 +8,45 @@
   line-height: 1.3;
   font-weight: 500;
   color: $mainColor;
-  background-image: $backgroundColor;
 }
 
-h1 {
-  @include adaptiveValue("font-size", 30, 22);
-  text-align: center;
-  font-weight: bold;
-  margin: rem(20) 0;
-  color: $textColor;
-  line-height: math.div(18, 16);
-}
+// h1 {
+//   @include adaptiveValue("font-size", 30, 22);
+//   text-align: center;
+//   font-weight: bold;
+//   margin: rem(20) 0;
+//   color: $textColor;
+//   line-height: math.div(18, 16);
+// }
 
-h2 {
-  @include adaptiveValue("font-size", 20, 16);
-  font-weight: 600;
-  margin-bottom: rem(20);
-  color: $textColor;
-  line-height: math.div(18, 16);
-}
+// h2 {
+//   @include adaptiveValue("font-size", 20, 16);
+//   font-weight: 600;
+//   margin-bottom: rem(20);
+//   color: $textColor;
+//   line-height: math.div(18, 16);
+// }
 
-h3 {
-  @include adaptiveValue("font-size", 18, 16);
-  font-weight: 600;
-  margin: rem(20) 0;
-  color: $textColor;
-  line-height: math.div(18, 16);
-}
+// h3 {
+//   @include adaptiveValue("font-size", 18, 16);
+//   font-weight: 600;
+//   margin: rem(20) 0;
+//   color: $textColor;
+//   line-height: math.div(18, 16);
+// }
 
-h4 {
-  font-weight: 600;
-  margin: rem(20) 0;
-  color: $textColor;
-  line-height: math.div(18, 14);
-}
+// h4 {
+//   font-weight: 600;
+//   margin: rem(20) 0;
+//   color: $textColor;
+//   line-height: math.div(18, 14);
+// }
 
-p {
-  margin-bottom: rem(10);
-  color: $textColor;
-  line-height: math.div(18, 14);
-}
+// p {
+//   margin-bottom: rem(10);
+//   color: $textColor;
+//   line-height: math.div(18, 14);
+// }
 
 //create focus-vizible only mobile
 .link {

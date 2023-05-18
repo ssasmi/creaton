@@ -1,4 +1,11 @@
 .hero {
+  background: linear-gradient(
+    102.87deg,
+    #fceed5 6.43%,
+    #fceed5 78.33%,
+    #ffe7ba 104.24%
+  );
+  border-radius: 0px 0px 40px 40px;
   // .hero__container
   &__container {
     display: flex;
@@ -10,6 +17,17 @@
     padding-top: 55px;
     flex: 0 0 540px;
     text-align: left;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      bottom: 0px;
+      width: 751px;
+      height: 93px;
+      background-image: url("../img/rectangle-3.png");
+      background-repeat: no-repeat;
+    }
   }
   // .hero__title
   &__title {
@@ -78,9 +96,9 @@
     }
 
     &.focus-visible {
-        border-color: red;
-        outline: 1px dotted red;
-      }
+      border-color: red;
+      outline: 1px dotted red;
+    }
   }
   // .hero__btn--modal
   &__btn--modal {
@@ -101,11 +119,11 @@
   }
   // .hero__image
   &__image {
+    display: flex;
     flex-shrink: 0;
   }
   &__img {
     left: -170px;
-    top: -16px;
 
     position: relative;
   }

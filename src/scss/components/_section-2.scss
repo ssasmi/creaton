@@ -1,0 +1,123 @@
+.banner {
+  // .banner__container
+  &__container {
+    min-height: 378px;
+    background: #ffb775;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    max-height: 450px;
+    position: relative;
+    z-index: -3;
+    overflow: hidden;
+    margin-bottom: 60px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -90px;
+      bottom: 0px;
+      width: 782px;
+      height: 678px;
+      background-image: url("../img/svg/banner-bg-1.svg");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -85px;
+      bottom: -385px;
+      width: 782px;
+      height: 678px;
+      background-image: url("../img/svg/banner-bg-2.svg");
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+  }
+  // .banner__content
+  &__content {
+    padding: 64px 85px 0;
+    &::after {
+      content: "";
+      background-image: url("../img/banner.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 575px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  // .banner__title
+  &__title {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 68px;
+    text-transform: capitalize;
+    color: #003459;
+    margin-bottom: 2px;
+  }
+  // .banner__btn
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.description {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+
+  color: #003459;
+
+  margin-bottom: 8px;
+}
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #242b33;
+
+  margin-bottom: 42px;
+}
+.banner-btn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  // .banner-btn__main
+  &__main {
+    padding: 14px 28px 10px;
+    background: #003459;
+    border-radius: 57px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fdfdfd;
+    min-height: 48px;
+  }
+  // .banner-btn__intro
+  &__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px 10px;
+    gap: 8px;
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    background-color: inherit;
+    min-height: 48px;
+    color: #003459;
+  }
+}

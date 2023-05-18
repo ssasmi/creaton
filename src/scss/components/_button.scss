@@ -33,6 +33,12 @@
     border-color: $activeColor;
     background-color: $activeColor;
   }
+
+  &.focus-visible {
+    border-color: red;
+    color: #fff;
+    background-color: $activeColor;
+  }
 }
 
 .btn.focus-visible {
