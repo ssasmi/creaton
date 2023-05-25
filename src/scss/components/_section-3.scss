@@ -1,0 +1,42 @@
+.brand {
+  &__container {
+    position: relative;
+
+  }
+  &__title {
+  }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.image {
+}
+
+.swiper-btn {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/svg/paw.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.swiper-btn--prev {
+    left: 0px;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
+  }
+  
+.swiper-btn--next {
+  right: 0;
+  transform: translate(50%, -50%) rotate(90deg) scale(0.5);
+}

@@ -2,15 +2,16 @@ import Swiper, { Navigation, Scrollbar } from 'swiper';
 
 Swiper.use([Navigation, Scrollbar]);
 
-const swiper = new Swiper('.main__content', {
-  slidesPerView: 3,
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 7,
   spaceBetween: 20,
+  loop: true,
   scrollbar: {
-    el: '.main__scroll',
+    el: '.swiper-slide',
     draggable: true,
   },
   navigation: {
-    nextEl: '.main__slider-btn--next',
-    prevEl: '.main__slider-btn--prev',
+    nextEl: '.swiper-btn--next',
+    prevEl: '.swiper-btn--prev',
   },
 });

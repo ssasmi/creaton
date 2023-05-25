@@ -62,6 +62,16 @@
     text-transform: capitalize;
     color: #003459;
     margin-bottom: 2px;
+    &::after{
+      content:'';
+      background-size: auto;
+      background-image: url('../img/svg/paw.svg');
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 42px;
+      height: 38px;
+      margin-left: 16px;
+    }
   }
   // .banner__btn
   &__btn {

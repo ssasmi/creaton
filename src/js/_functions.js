@@ -64,14 +64,6 @@
 // import SmoothScroll from 'smooth-scroll';
 // const scroll = new SmoothScroll('a[href*="#"]');
 
-// Подключение событий свайпа на мобильных
-// import 'swiped-events';
-// document.addEventListener('swiped', function(e) {
-//   console.log(e.target);
-//   console.log(e.detail);
-//   console.log(e.detail.dir);
-// });
-
 // import { validateForms } from './functions/validate-forms';
 // const rules1 = [...];
 
