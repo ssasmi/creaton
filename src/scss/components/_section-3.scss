@@ -40,3 +40,8 @@
   right: 0;
   transform: translate(50%, -50%) rotate(90deg) scale(0.5);
 }
+
+.swiper-pagination-current {
+  background-color: #7A956B;
+  color:#000;
+}

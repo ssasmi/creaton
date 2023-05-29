@@ -241,6 +241,10 @@ html.lock {
   flex-direction: column;
 }
 
+.conteiner-right {
+  padding-left: calc((100% - 1200px)/2 + 15px );
+}
+
 // Брейк-поинты
 // $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
 // $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
