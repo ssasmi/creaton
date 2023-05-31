@@ -239,11 +239,11 @@ html.lock {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  flex: 1 1 100%;
+  
 }
 
-.conteiner-right {
-  padding-left: calc((100% - 1200px)/2 + 15px );
-}
+
 
 // Брейк-поинты
 // $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении

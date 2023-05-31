@@ -67,7 +67,7 @@
     color: $activeColor;
   }
 }
-.nav__link.focus-visible {
+.link.focus-visible {
   outline: 1px solid $activeColor;
   outline-offset: 3px;
 }
@@ -76,8 +76,12 @@
 //for modul [headerScroll]
 .header._header-scroll {
   padding-top: rem(30);
-  padding-top: rem(30);
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+//
+.conteiner-right {
+  padding-left: calc((100% - 1200px)/2 + 15px );
 }
 
 /* --------- if isset select,choices --------- */

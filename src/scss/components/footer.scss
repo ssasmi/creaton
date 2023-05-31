@@ -1,0 +1,88 @@
+.footer {
+  background-color: #7a956b;
+  // .footer__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 15px;
+    @include adaptiv-value("padding-top", 20, 10);
+    @include adaptiv-value("padding-bottom", 20, 10);
+    @media (max-width: 1020px) {
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+  // .footer__logo
+  &__logo {
+    & a {
+      background-size: cover;
+      width: 115px;
+      display: block;
+      height: 40px;
+    }
+    @media (max-width: 1020px) {
+      flex: 1 1 100%;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+  // .footer__list
+  &__list {
+  }
+  // .footer__item
+  &__item {
+    position: relative;
+    padding-left: 23px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: calc(50% - 5px);
+      width: 10px;
+      height: 10px;
+      background-image: url("../img/svg/star.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  // .footer__interact
+  &__interact {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  // .footer__social
+  &__social {
+    flex: 1 1 100%;
+    & li {
+      display: inline-block;
+      line-height: 0;
+    }
+  }
+  // .footer__icon
+  &__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  // .footer__btns
+  &__btns {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  // .footer__btn
+  &__btn {
+  }
+  // .footer__btn--arownd
+  &__btn--roгnd {
+  }
+}
